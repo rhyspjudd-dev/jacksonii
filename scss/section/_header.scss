@@ -21,6 +21,7 @@ header {
                 background-image: linear-gradient( to top, $green, rgba(255, 255, 255, 0.8) 4% );
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
+                display: none;
                 .logo {
                     background: url(assets/logo/Jacksonii-logo-AW_RGB_Stacked.png) center;
                     background-size: contain;
