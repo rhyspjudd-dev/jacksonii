@@ -36,13 +36,6 @@ header {
                     height: 20px;
                     background-color: $yellow;
                     border-top-left-radius: 20px;
-                    // Remove span, after
-                    span {
-                        pointer-events: none;
-                        color: brown;
-                        background: green;
-                        border: none;
-                    }
                 }
             }
         }
