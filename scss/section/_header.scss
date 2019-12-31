@@ -39,6 +39,9 @@ header {
                     article {
                         pointer-events: none;
                         border: black;
+                        span {
+                            pointer-events: none;
+                        }
                     }
                 }
             }
