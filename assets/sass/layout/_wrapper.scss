@@ -31,6 +31,15 @@
 			> section {
 				> header {
 
+					.logo {
+						width: 250px;
+						height: 150px;
+						.img {
+							background-image: url('images/logo/Jacksonii-logo-AW_RGB_Stacked.png') no-repeat center center fixed;
+							background-size: contain;
+						}
+					}
+
 					// Line.
 						&:before {
 							height: calc(100% + #{$pad * 2});
