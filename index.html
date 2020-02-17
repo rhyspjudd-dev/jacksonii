@@ -13,6 +13,10 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 		<style>
 
 		#wrapper > section.intro > header > * {
@@ -93,7 +97,30 @@
     		justify-content: flex-start;
 		}
 
+		a.arrow:before { width: 2rem !important;}
+
+
+		.gallery .modal.visible {
+			pointer-events: auto;
+			opacity: 1;
+			visibility: visible;
+			z-index: 11000;
+			display: inline-block;
+			margin: auto;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.gallery .modal .inner img {
+			box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
+			display: block;
+			max-height: 90vh;
+			max-width: 90vw;
+			margin: 50px auto;
+		}
+
 		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -101,7 +128,7 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section class="intro">
+					<section class="intro" data-aos="fade-in" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
 						<header>
 							<div class="logo">
 								<div class="img"></div>
@@ -117,7 +144,7 @@
 					</section>
 
 				<!-- Section -->
-					<section id="first">
+					<section id="first" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 						<header>
 							<h2>An intro to us</h2>
 						</header>
@@ -128,34 +155,34 @@
 					</section>
 
 				<!-- Section -->
-					<section>
+					<section data-aos="fade-in" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 						<header>
-							<h2>The species we breed</h2>
+							<h2>The Story so far</h2>
 						</header>
 						<div class="content">
 							<p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p>
 							<ul class="feature-icons">
-								<li class="icon solid fa-laptop">Consequat tempus</li>
-								<li class="icon solid fa-bolt">Etiam adipiscing</li>
-								<li class="icon solid fa-signal">Libero nullam</li>
-								<li class="icon solid fa-cog">Blandit condimentum</li>
-								<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-								<li class="icon solid fa-code">Nibh amet venenatis</li>
+								<li class="icon solid fa-angle-right">Consequat tempus</li>
+								<li class="icon solid fa-angle-right">Etiam adipiscing</li>
+								<li class="icon solid fa-angle-right">Libero nullam</li>
+								<li class="icon solid fa-angle-right">Blandit condimentum</li>
+								<li class="icon solid fa-angle-right">Lorem ipsum dolor</li>
+								<li class="icon solid fa-angle-right">Nibh amet venenatis</li>
 							</ul>
 							<p>Vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>
 						</div>
 					</section>
 
 				<!-- Section -->
-					<section>
+					<section data-aos="fade-in">
 						<header>
-							<h2>Ultrices erat magna sed condimentum</h2>
+							<h2>The species we breed</h2>
 						</header>
 						<div class="content">
 							<p><strong>Integer mollis egestas</strong> foo nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
 
 							<!-- Section -->
-								<section>
+								<section data-aos="fade-in">
 									<header>
 										<h3>Erat aliquam</h3>
 										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
@@ -186,7 +213,7 @@
 								</section>
 
 							<!-- Section -->
-								<section>
+								<section data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 									<header>
 										<h3>Lorem gravida</h3>
 										<p>Proin aliquam facilisis rhysie ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
@@ -204,9 +231,9 @@
 					</section>
 
 				<!-- Section -->
-					<section>
+					<section data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 						<header>
-							<h2>Duis sed adpiscing veroeros amet</h2>
+							<h2>Learn more</h2>
 						</header>
 						<div class="content">
 							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
@@ -486,7 +513,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				-->
 
 				<!-- Section -->
-					<section>
+					<section data-aos="fade-in" data-aos-offset="200" data-aos-delay="50">
 						<header>
 							<h2>Get in touch</h2>
 						</header>
@@ -511,7 +538,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 							</form>
 							-->
 						</div>
-						<footer>
+						<footer data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 							<ul class="items">
 								<li>
 									<h3>Email</h3>
@@ -554,6 +581,11 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				AOS.init();
+			  </script>			
+
 
 	</body>
 </html>
